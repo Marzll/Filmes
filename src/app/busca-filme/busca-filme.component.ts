@@ -15,4 +15,7 @@ export class BuscaFilmeComponent {
                     Validators.minLength(2)]]
     })
   }
+  buscar(){
+    console.log(this.formBusca.value)
+  }
 }
