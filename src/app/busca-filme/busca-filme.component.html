@@ -1,7 +1,9 @@
 <h1>Buscar filme </h1>
-<form>
+<form [formGroup]="formBusca">
     <label for="titulo" class="form-label">Título</label>
-    <input class="form-control" type="text" name="titulo" id="titulo">
+    <input class="form-control" type="text" 
+            name="titulo" id="titulo" formControlName="titulo">
     <input class="btn btn-info mt-3" 
-            type="button" value="Buscar">
+            type="button" value="Buscar"
+            [disabled]="formBusca.invalid">
 </form>
